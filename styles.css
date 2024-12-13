@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font: 16px / 1.7 Open Sans, arial, Helvetica Neue, Helvetica;
+    margin: auto;
+    width: 1500px;
+    position: relative;
+}
+.top {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    animation: up linear 1s forwards;
+}
+.logo {
+    margin-left: 150px;
+    margin-top: 25px;
+}
+.menu nav ul {
+    display: flex;
+    margin-left: 250px;
+}
+.menu nav ul li {
+    margin-left: 100px;
+    font-weight: 700;
+    transition: background-color 1s linear;
+    transition: padding 1s linear;
+    padding: 5px 5px;
+    animation: up linear 1s forwards;
+}
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.menu nav ul li:hover {
+    background-color: #006241;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 5px;
+    box-shadow: #92efd0 1px 1px 15px 5px ; 
+}
+
+.center {
+    margin: 80px 100px ;
+}
+.Paracenter {
+    font-size: 50px;
+    font-weight: 900;
+    width: 500px;
+}
+.paraNameMain {
+    color: #006241;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 5px;
+}
+.paranote {
+    width: 500px;
+    margin-top: 5px;
+    color: rgb(97, 97, 97);
+}
+.btnLearnMore button {
+    border: solid #00d28c ;
+    background-color: transparent;
+    color: white;
+    font-size: 700;
+    font-size: 17px;
+    cursor: pointer;
+    height: 40px;
+    width: 125px;
+    border-radius: 25px;
+}
+.btnLearnMore {
+    background-color: #006241;
+    margin-top: 25px;
+    border-radius: 25px;
+    width: 125px;
+    box-shadow: #00b87b 1px 1px 15px 5px;
+    font-size: 700;
+}
+.imgMatcha img {
+    position: absolute;
+    top: 150px;
+    left: 1050px;
+    transform: rotate(-25deg); 
+    filter: drop-shadow( 1px 1px 35px #00b77a);
+    animation: spin linear 1s forwards;
+}
+@keyframes spin {
+    from {
+        opacity: 0;
+        transform: rotate(360deg)
+    }
+    to {
+        opacity: 1;
+        transform: rotate(-25deg);
+    }
+}
+.colorStarBuck {
+    position: absolute;
+    background-color: #006241;
+    width: 509px;
+    height: 490px;
+    border-radius: 100% 0px 0px 0px ;
+    top: 250px;
+    left: 1000px;
+    z-index: -1;
+}
+.TopInCenter {
+    animation: up linear .5s forwards;
+}
+.nameMain {
+    animation: up linear .7s forwards;
+}
+.note {
+    animation: up linear .8s forwards;
+}
+.btnLearnMore {
+    animation: out linear 1s forwards ;
+}
+@keyframes out {
+    from {
+        opacity: 0;
+        transform: translateZ(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(100px);
+    }
+}
